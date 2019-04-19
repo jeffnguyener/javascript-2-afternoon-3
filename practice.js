@@ -99,7 +99,9 @@ function contains(array, name, cb) {
     if (array[i] === name) {
       cb(true)
     }
-    else cb(false)
+    else {
+      cb(false)
+    }
   }
 }
 
@@ -141,8 +143,6 @@ uniq(names, function (uniqArr) {
 */
 
 //Code Here 
-function each(aaron, beaver, cookie, cb)
-cb(each)
 
 // Do not edit the code below.
 each(names, function (item, indice) {
