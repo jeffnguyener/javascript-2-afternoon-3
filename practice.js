@@ -176,7 +176,9 @@ each(names, function (item, indice) {
 // Code here
 function getUserById(users, id, cb) {
   for(let i = 0; i < users.length; i++) {
-    cb(users[i], i)
+    for(let j =0; j < id.length; j++) {
+      cb(users[i]);
+    }
   }
 }
 
